@@ -95,6 +95,12 @@ DATABASES = {
 }
 
 
+DATABASES = {
+    'default': dj_database_url.parse('postgres://learning_log_npzl_user:x3ZjDIEHc2y9ENRBEfhwBDL8bCx3ilho@dpg-cjv70t5175es73dmlv0g-a/learning_log_npzl')
+}
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
