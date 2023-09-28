@@ -85,8 +85,19 @@ WSGI_APPLICATION = "learning_log.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "learning_log_npzl",
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'learning_log_npzl',
+        'USER': 'learning_log_npzl_user',
+        'PASSWORD': 'x3ZjDIEHc2y9ENRBEfhwBDL8bCx3ilho',
+        'HOST': 'dpg-cjv70t5175es73dmlv0g-a',
+        'PORT': '',
     }
 }
 
@@ -95,9 +106,6 @@ DATABASES = {
 }
 
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://learning_log_npzl_user:x3ZjDIEHc2y9ENRBEfhwBDL8bCx3ilho@dpg-cjv70t5175es73dmlv0g-a/learning_log_npzl')
-}
 
 
 
